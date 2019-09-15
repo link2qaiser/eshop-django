@@ -6,4 +6,5 @@ from .models import Category
 # Create your views here.
 def index(request):
     categories = Category()
+    
     return render(request, 'categories/list.html', {'list': categories})
